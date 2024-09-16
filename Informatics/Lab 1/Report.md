@@ -1,2 +1,2 @@
 # Лабораторная работа №1 (Зюзин Владислав К3220)
-![1st prtsc](https://myoctocat.com/assets/images/base-octocat.svg)
+![1st prtsc](Снимок экрана от 2024-09-15 13-25-02.png)
