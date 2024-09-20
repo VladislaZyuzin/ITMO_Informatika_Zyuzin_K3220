@@ -35,6 +35,9 @@ gedit script.bash
 
 Далеее в gedit я изменил приветсвие таким образом, чтобы когда пользователь вызывал с помощью bash файл, а после через пробел ввписав своё имя, 
 то он смог получить в командной строке приветсвие и введённый им текст. Для я ввёл команду: `echo "Welcome, $*"`
+
+![4st prtsc](picture5.png)
+
 Сохранив и закрыв текстовый редактор введём команды:
 ```
 bash script.bash Vasya Pupkin
@@ -43,7 +46,6 @@ bash script.bash Vasya Pupkin
 ```
 bash script.bash Benedict Timothy Carlton Cumberbatch
 ```
-![4st prtsc](picture5.png)
 
 Как мы видим, мой скрипт сработал, при введении, описанном в методичке ни Вася Пупкин, ни Benedict Timothy Carlton Cumberbatch, сыгравший Шерлока в одноимённом сериале, не останутся обиженными)))
 
