@@ -36,7 +36,7 @@ docker run -it aafire
 ```
 aafire
 ```
-![image](https://github.com/cs-itmo-2023/lab-4-Andrzakourcev/assets/144477949/1b83e701-d5f7-44e6-8932-09b0a7e4dec2)
+![image](png3.png)
 
 Видно, что контейнер запущен и все работает.
 
