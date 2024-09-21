@@ -22,7 +22,7 @@ FROM ubuntu:latest
 ```
 RUN apt-get update && apt-get install -y libaa-bin && apt-get install -it iputils-ping
 ```
-![image](https://github.com/cs-itmo-2023/lab-4-Andrzakourcev/assets/144477949/fa516989-be77-4c82-923c-d640c5d6fd44)
+![image](png2.png)
 
 На этом Dockerfile готов, закрываем и сохраняем его под этим названием. В терминале в папке с этим файлом запускаем команду сборки образа с тегом “aafire”.
 ```
