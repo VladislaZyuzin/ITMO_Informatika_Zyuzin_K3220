@@ -26,11 +26,11 @@ RUN apt-get update && apt-get install -y libaa-bin iputils-ping
 
 На этом Dockerfile готов, закрываем и сохраняем его под этим названием. В терминале в папке с этим файлом запускаем команду сборки образа с тегом “aafire”.
 ```
-docker build -t aafire .
+sudo docker build -t aafire .
 ```
 Далее можем запустить контейнер и  подключиться к нему напрямую командой
 ```
-docker run -it aafire
+sudo docker run -it aafire
 ```
 И уже напрямую в терминале контейнера запустить команду 
 ```
