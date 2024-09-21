@@ -20,7 +20,7 @@ FROM ubuntu:latest
 ```
 Далее указываем, что мы хотим запустить. В нашем случае мы обновляем пакетный менеджер и устанавливаем необходимое нам ПО.
 ```
-RUN apt-get update && apt-get install -y libaa-bin && apt-get install -it iputils-ping
+RUN apt-get update && apt-get install -y libaa-bin iputils-ping
 ```
 ![image](png2.png)
 
