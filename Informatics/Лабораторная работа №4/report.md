@@ -32,6 +32,7 @@ sudo docker build -t aafire .
 ```
 sudo docker run -it aafire
 ```
+![image](png4.png)
 И уже напрямую в терминале контейнера запустить команду 
 ```
 aafire
