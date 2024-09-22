@@ -48,20 +48,20 @@ aafire
 
 Откроем ещё одно окно терминала и создадим сеть при помощи команды:
 ```
-docker network create mynetwork
+sudo docker network create mynetwork
 ```
 После этого нужно подключим контейнеры к нашей сети. Названия контейнеров можно увидеть при выводе списка действующих контейнеров.
 
-![image](https://github.com/cs-itmo-2023/lab-4-Andrzakourcev/assets/144477949/acbc5c97-9d2a-410c-b67c-d868cc5db200)
+![image](png6.png)
 
 Теперь при помощи следующей команды посмотрим настройки нашей сети.
 ```
-docker network inspect mynetwork
+sudo docker network inspect mynetwork
 ```
-![image](https://github.com/cs-itmo-2023/lab-4-Andrzakourcev/assets/144477949/f2f247cc-d6f4-410c-b0e9-1c95f590ad1a)
+![image](png7.png)
 
 Контейнеры соединены. Теперь проверим соединение при помощи команды ping. Ip-адреса мы узнали из предыдущей команды.
 
-![image](https://github.com/cs-itmo-2023/lab-4-Andrzakourcev/assets/144477949/43c2dab6-2c26-4968-9668-2d95f1cff399)
+![image](png8.png)
 
 Все отлично работает!
