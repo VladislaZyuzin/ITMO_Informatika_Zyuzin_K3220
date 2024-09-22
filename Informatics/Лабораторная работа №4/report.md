@@ -12,7 +12,7 @@ gedit Dockerfile
 
 ```
 
-![image](png1.png)
+![image](png-1.PNG)
 
 В нём прежде всего указываем, на основе какого образа будет работать наш.
 ```
@@ -22,7 +22,7 @@ FROM ubuntu:latest
 ```
 RUN apt-get update && apt-get install -y libaa-bin iputils-ping
 ```
-![image](png2.png)
+![image](png0.png)
 
 На этом Dockerfile готов, закрываем и сохраняем его под этим названием. В терминале в папке с этим файлом запускаем команду сборки образа с тегом “aafire”.
 ```
@@ -32,19 +32,19 @@ sudo docker build -t aafire .
 ```
 sudo docker run -it aafire
 ```
-![image](png4.png)
+![image](png1.PNG)
 
 И уже напрямую в терминале контейнера запустить команду 
 ```
 aafire
 ```
-![image](png3.png)
+![image](png2.PNG)
 
 Видно, что контейнер запущен и все работает.
 
 Теперь запустим 2 контейнера из нашего образа и настроим связь между ними.
 
-![image](png5.png)
+![image](png3.PNG)
 
 Откроем ещё одно окно терминала и создадим сеть при помощи команды:
 ```
@@ -52,16 +52,16 @@ sudo docker network create mynetwork
 ```
 После этого нужно подключим контейнеры к нашей сети. Названия контейнеров можно увидеть при выводе списка действующих контейнеров.
 
-![image](png6.png)
+![image](png4.PNG)
 
 Теперь при помощи следующей команды посмотрим настройки нашей сети.
 ```
 sudo docker network inspect mynetwork
 ```
-![image](png7.png)
+![image](png5.PNG)
 
 Контейнеры соединены. Теперь проверим соединение при помощи команды ping. Ip-адреса мы узнали из предыдущей команды.
 
-![image](png8.png)
+![image](png6.PNG)
 
 Все отлично работает!
