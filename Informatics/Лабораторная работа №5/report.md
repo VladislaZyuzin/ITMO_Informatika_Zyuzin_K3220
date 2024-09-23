@@ -3,7 +3,7 @@
 
 На GitHub создал новый репозиторий с именем practice5. В папке на компьютере сохранил его локальную копию:
 ```
-git clone https://github.com/VladislaZyuzin/git-practice-5.git
+git clone https://github.com/VladislaZyuzin/git-practice-5
 cd practice5
 ```
 Далее создаю текстовый файл в папке и добавляю в него текст. Завершаю эту часть, внеся изменения в репозиторий с помощью следующих команд:
