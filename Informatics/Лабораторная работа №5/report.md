@@ -15,9 +15,7 @@ cd git-practice-5
 ![picture](png1.PNG)
 
 Далее создаю текстовый файл в папке и добавляю в него текст. 
-```
-touch example.txt
-```
+
 ```
 gedit example.txt
 ```
