@@ -14,12 +14,20 @@ cd git-practice-5
 
 ![picture](png1.PNG)
 
-Далее создаю текстовый файл в папке и добавляю в него текст. Завершаю эту часть, внеся изменения в репозиторий с помощью следующих команд:
+Далее создаю текстовый файл в папке и добавляю в него текст. 
 ```
-git add example1.txt
+touch example.txt
 ```
 ```
-git commit -m "File added example1.txt"
+gedit example.txt
+```
+
+Завершаю эту часть, внеся изменения в репозиторий с помощью следующих команд:
+```
+git add example.txt
+```
+```
+git commit -m "File added example.txt"
 ```
 ![picture](png2.PNG)
 
