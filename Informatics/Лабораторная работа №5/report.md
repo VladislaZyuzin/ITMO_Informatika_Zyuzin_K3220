@@ -48,7 +48,7 @@ git commit -m "File added 2 example.txt"
 git push origin feature-branch
 ```
 ![picture](png4.PNG)
-
+![picture](png4.1.PNG)
 В завершение, переключимся на основную ветку и сольём изменения из ветки feature-branch в основную ветку:
 ```
 git checkout main
