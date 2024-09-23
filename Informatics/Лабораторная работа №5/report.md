@@ -21,25 +21,44 @@ git add example1.txt
 ```
 git commit -m "File added example1.txt"
 ```
+![picture](png2.PNG)
+
 ```
 git push origin main
 ```
+![picture](png3.PNG)
+
+При введении пароля может возникнуть ошибкь, указывающая на то, что GitHub перестал поддерживать аутентификацию с использованием паролей для операций, таких как push. Вместо этого вы должны использовать Personal Access Token (PAT). Для этого на сайте гитхаба создаём токкен с разрешением доступа к репозиторию: repo. После получения ключа, сохраняем его у себя и используем вместо пароля.
 
 Создаём ветку и переключаемся на неё:
 ```
 git branch feature-branch
+```
+```
 git checkout feature-branch
 ```
 В новую созданную ветку feature-branch добавим старый файл, в котором будет добавлен ещё текст:
 ```
-git add example1.txt
-git commit -m "File added 2 example1.txt"
+git add example.txt
+```
+```
+git commit -m "File added 2 example.txt"
+```
+```
 git push origin feature-branch
 ```
+![picture](png4.PNG)
+
 В завершение, переключимся на основную ветку и сольём изменения из ветки feature-branch в основную ветку:
 ```
 git checkout main
+```
+```
 git merge feature-branch
+```
+```
 git push origin main
 ```
+![picture](png5.PNG)
+
 Таким образом, изменения были успешно слиты в главную ветку.
