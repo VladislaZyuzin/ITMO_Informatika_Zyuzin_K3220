@@ -115,6 +115,7 @@ git commit -m "Добавлена глава 3: Вход в систему"
 git push origin feature-login_1
 ```
 ![picture](png6.PNG)
+![picture](png6.1.PNG)
 ## Работа с удаленным репозиторием
 Переключаемся на ветку main и там вносим изменения:
 ```
