@@ -22,3 +22,16 @@ git push origin main
 git branch feature-branch
 git checkout feature-branch
 ```
+В новую созданную ветку feature-branch добавим старый файл, в котором будет добавлен ещё текст:
+```
+git add example1.txt
+git commit -m "File added 2 example1.txt"
+git push origin feature-branch
+```
+В завершение, переключимся на основную ветку и сольём изменения из ветки feature-branch в основную ветку:
+```
+git checkout main
+git merge feature-branch
+git push origin main
+```
+Таким образом, изменения были успешно слиты в главную ветку.
