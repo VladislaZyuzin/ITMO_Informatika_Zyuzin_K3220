@@ -9,7 +9,7 @@ git clone https://github.com/VladislaZyuzin/git-practice-5.git
 bash
 ```
 ```
-cd giy-practice-5
+cd git-practice-5
 ```
 
 ![picture](png1.PNG)
