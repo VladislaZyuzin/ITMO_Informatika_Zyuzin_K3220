@@ -157,7 +157,11 @@ gedit example2.md
 Закоммитим изменения и отправим всё на GitHub:
 ```
 git add example2.md
+```
+```
 git commit -m "Изменено название книги и введение"
+```
+```
 git push origin main
 ```
 ![picture](png9.PNG)
@@ -184,7 +188,11 @@ git switch feature-login_1
 Делаем коммит изменений и отправляем на GitHub:
 ```
 git add example2.md
+```
+```
 git commit -m "Добавлен раздел о магии конфликтов"
+```
+```
 git push origin feature-login
 ```
 ![picture](png11.PNG)
@@ -239,7 +247,11 @@ git merge feature-login
 Закоммитим разрешение конфликта и отправляем изменения на GitHub:
 ```
 git add example2.md
+```
+```
 git commit -m "Resolved conflict in chapter 2"
+```
+```
 git push origin main
 ```
 ![picture](png15.PNG)
@@ -263,9 +275,20 @@ else
  echo "Этот файл не может быть книгой"
 fi
 ```
-Вот скрин, подтверждающий работу скрипта:
+![picture](png21.PNG)
 
-![screen2](https://github.com/Alexis416/Informatics/blob/main/Lab-5/2.png)
+Для проверки работы скрипта было создано два текстовых файла:
+1. book1.txt со словом "Введение":
+
+![picture](png19.PNG)
+
+2. book2.txt без слова "Введение":
+
+![picture](png20.PNG)
+
+Ниже находится скрин, подтверждающий работу скрипта:
+
+![picture](png18.PNG)
 
 Таким образом, при каждом коммите файла происходит его проверка и высвечивается сообщение, 
 говорящее о том, является ли наш файл книгой или нет.
@@ -274,11 +297,16 @@ fi
 ```
 git flow init
 ```
+![picture](png22.PNG)
+
 Создадим ветку для новой функциональности "task-management":
 ```
 git flow feature start task-management
 ```
-Внесу изменения в код файла task_manager.py, чтобы добавить функционал управления задачами:
+![picture](png23.PNG)
+
+Создаём файл task_manager.py
+Вносим изменения в код файла task_manager.py, чтобы добавить функционал управления задачами:
 ```
 def create_task(title):
     # Логика создания задачи
@@ -287,19 +315,30 @@ def create_task(title):
 Сделаю коммит для изменения по мере разработки:
 ```
 git add task_manager.py
+```
+
+![picture](png24.PNG)
+
+```
 git commit -m "Добавлен функционал управления задачами"
 ```
 Завершим фичу и объединим ее с основной веткой когда завершим разработку функции:
 ```
 git flow feature finish task-management
 ```
+![picture](png25.PNG)
+
 Git Flow автоматически переключится на ветку develop и выполнит слияние.
 
 Переключимся на ветку "develop" и начнём создание релиза:
 ```
 git checkout develop
+```
+```
 git flow release start v1.0.0
 ```
+![picture](png26.PNG)
+
 Обновим версию в файле version.txt:
 ```
 echo "v1.0.0" > version.txt
@@ -314,20 +353,31 @@ git flow release finish v1.0.0
 ```
 git flow hotfix start hotfix-1.0.1
 ```
+![picture](png27.PNG)
+
 Вносим изменения для исправления ошибки и коммитим эти самые изменения:
 ```
 # Исправление ошибки
 git add file_with_error.py
+```
+```
 git commit -m "Исправлена критическая ошибка"
 ```
 Завершаем файл hotfix и объединяем его с ветками "develop" и "main":
 ```
 git flow hotfix finish hotfix-1.0.1
 ```
+![picture](png28.PNG)
+
 В конце, завершаем работу и отправляем все изменения на удаленный репозиторий:
 ```
 git push origin develop
+```
+```
 git push origin main
 ```
 
-![screen3](https://github.com/Alexis416/Informatics/blob/main/Lab-5/3.png)
+![picture](png29.PNG)
+
+## Заключение
+В ходе лабораторной работы были разобраны работы с ветками, удалённым репозиторием, было произведено моделирование и разрешение конфликта при слиянии, былл написан и применён скрипт для автоматизация проверки файлов при коммите и был использован Git Flow в проекте.
