@@ -53,8 +53,6 @@ git push origin feature-branch
 ```
 ![picture](png3.PNG)
 
-![picture](png4.PNG)
-
 В завершение, переключимся на основную ветку и сольём изменения из ветки feature-branch в основную ветку:
 ```
 git checkout main
@@ -65,9 +63,14 @@ git merge feature-branch
 ```
 git push origin main
 ```
-![picture](png5.PNG)
+![picture](png4.PNG)
+
 
 Таким образом, изменения были успешно слиты в главную ветку.
+
+В репозитории это будет выглядеть как то так:
+![picture](png5.PNG)
+
 
 ## Работа с ветками
 Создаём новый текстовый файл с базовой структурой книги:
