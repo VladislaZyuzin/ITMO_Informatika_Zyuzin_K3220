@@ -244,7 +244,7 @@ git push origin main
 ```
 ![picture](png15.PNG)
 
-![picture](png 16.1.PNG)
+![picture](png16.1.PNG)
 
 ![picture](png16.PNG)
 
