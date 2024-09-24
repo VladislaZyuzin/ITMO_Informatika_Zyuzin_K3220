@@ -10,7 +10,7 @@ touch skript.bash
 ```
 gedit skript.bash
 ```
-![-1st prtsc](png3.png)
+![-1st prtsc](png1.png)
 
 В **gedit** был занесён скрипт, на нём (в комментариях) я указал, что было проделано для работоспособности программы : 
 ```
