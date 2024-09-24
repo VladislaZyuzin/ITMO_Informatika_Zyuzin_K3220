@@ -54,7 +54,7 @@ git commit -m "File added 2 example.txt"
 git push origin feature-branch
 ```
 ![picture](png4.PNG)
-![picture](png4.1.PNG)
+
 В завершение, переключимся на основную ветку и сольём изменения из ветки feature-branch в основную ветку:
 ```
 git checkout main
@@ -71,6 +71,9 @@ git push origin main
 
 ## Работа с ветками
 Создаём новый текстовый файл с базовой структурой книги:
+```
+touch example2.txt
+```
 ```
 gedit example2.txt
 ```
@@ -108,20 +111,40 @@ gedit example2.txt
 ```
 git add example2.md
 ```
+Но тут всплывает ошибка, так как мы не создавали файл example2.md, но мы можем поменять расширения с помощью:
 ```
+mv example2.txt example2.md
+```
+![picture](png6.PNG)
+
+После успешного переноса изменений в файл с другим расширением добавляем комментарий: 
+``` 
 git commit -m "Добавлена глава 3: Вход в систему"
 ```
+Если мешает неотслеживаемый файл, то его можно убрать с помощью команды:
+```
+rm example2.txt
+```
+После чего заносии наши изменения в ветку на репозитории:
 ```
 git push origin feature-login_1
 ```
-![picture](png6.PNG)
-![picture](png6.1.PNG)
+![picture](png7.PNG)
+
+Вот так это будет выглядет в репозитории
+
+![picture](png8.PNG)
+
 ## Работа с удаленным репозиторием
 Переключаемся на ветку main и там вносим изменения:
 ```
 git checkout main
 ```
-Вносим изменения в нашем файле:
+Вносим изменения в нашем файле с помощью:
+```
+gedit example2.md
+```
+Вносим в текстовый редактор:
 ```
 # Название книги: Приключения в мире Git
 
@@ -137,10 +160,16 @@ git add example2.md
 git commit -m "Изменено название книги и введение"
 git push origin main
 ```
+![picture](png9.PNG)
+
+Так оно будет выглядеть в репозитории:
+
+![picture](png10.PNG)
+
 ## Моделирование конфликта
 Возвращаемся в ветку "feature-login" и вносим изменения в том же участке:
 ```
-git checkout feature-login
+git switch feature-login_1
 ```
 Меняем главу 2 в файле:
 ```
@@ -158,13 +187,29 @@ git add example2.md
 git commit -m "Добавлен раздел о магии конфликтов"
 git push origin feature-login
 ```
+![picture](png11.PNG)
+
+Репозиторий:
+
+![picture](png12.PNG)
+
 ## Разрешение конфликта
 Вернёмся в основную ветку и попробуем слить изменения:
 ```
 git checkout main
+```
+
+![picture](png13.PNG)
+
+```
 git merge feature-login
 ```
-Возникает конфликт, а в самом файле появляется вот такой текст:
+
+Возникает конфликт:
+
+![picture](png14.PNG)
+
+А в самом файле появляется вот такой текст:
 
 ```
 # Название книги: Приключения в мире Git
@@ -180,9 +225,6 @@ git merge feature-login
 Основные понятия и команды Git. 
 >>>>>>> feature-login
 ```
-В консоли появятся такие сообщения:
-
-![screen1](https://github.com/Alexis416/Informatics/blob/main/Lab-5/1.png)
 
 Разрешаем конфликт, удалив метки и оставив нужные изменения:
 ```
@@ -200,6 +242,12 @@ git add example2.md
 git commit -m "Resolved conflict in chapter 2"
 git push origin main
 ```
+![picture](png15.PNG)
+
+![picture](png16.1.PNG)
+
+![picture](png16.PNG)
+
 ## Автоматизация проверки файлов при коммите
 Поставлена задача: перед каждым коммитом необходимо автоматически проверять, 
 чтобы все .txt файлы в репозитории соответствовали определенному формату.
