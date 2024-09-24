@@ -326,7 +326,7 @@ git commit -m "Добавлен функционал управления зад
 ```
 git flow feature finish task-management
 ```
-![picture](pngnew25.png)
+![picture](png25new.png)
 
 Git Flow автоматически переключится на ветку develop и выполнит слияние.
 
