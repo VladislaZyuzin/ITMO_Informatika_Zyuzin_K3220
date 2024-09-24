@@ -135,7 +135,7 @@ git push origin feature-login_1
 ```
 ![picture](png7.PNG)
 
-Вот так это будет выглядет в репозитории
+Вот так это будет выглядет в репозитории:
 
 ![picture](png8.PNG)
 
